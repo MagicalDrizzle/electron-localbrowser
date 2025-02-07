@@ -9,8 +9,8 @@
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "app:dir": "electron-builder --dir",
-    "app:dist": "electron-builder"
+    "app:dir": "electron-builder --dir -wl",
+    "app:dist": "electron-builder -w 7z -l tar.xz"
   },
   "keywords": [],
   "author": "Drizzle",
