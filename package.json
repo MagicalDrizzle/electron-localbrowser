@@ -1,0 +1,27 @@
+{
+  "name": "electron-localbrowser",
+  "version": "0.1.0",
+  "description": "Run local HTML files in Electron",
+  "main": "main.js",
+  "build": {
+    "extraFiles": "html"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Drizzle",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.1.1",
+    "electron-builder": "^25.1.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  }
+}
